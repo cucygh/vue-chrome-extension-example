@@ -10,3 +10,5 @@ var app=new Vue({
     hello:hello
   }
 })
+
+console.log(Vue.version);

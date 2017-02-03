@@ -50,7 +50,7 @@
     "gulp-zip": "3.x.x",
     "require-dir": "0.x.x",
     "vinyl-named": "1.x.x",
-    "vue": "^1.0.28-csp",
+    "vue": "1.0.28-csp",
     "vueify-insert-css": "^1.0.0",
     "webpack": "1.x.x",
     "webpack-stream": "3.x.x",
