@@ -11,7 +11,7 @@ import args from './lib/args';
 const ENV = args.production ? 'production' : 'development';
 
 gulp.task('scripts', (cb) => {
-  return gulp.src('app/scripts/*.js')
+  return gulp.src(['app/scripts/*.js'])
     .pipe(plumber({
       errorHandler: function() {
         // Webpack will log the errors
@@ -41,7 +41,15 @@ gulp.task('scripts', (cb) => {
         loaders: [{
           test: /\.js$/,
           loader: 'babel'
+        },{
+          test: /\.vue$/,
+          loader: 'vue-loader'
         }]
+      },
+      resolve: {
+        alias: {
+          'vue$': 'vue/dist/vue.esm.js' // 'vue/dist/vue.common.js' for webpack 1
+        }
       },
       eslint: {
         configFile: '.eslintrc'

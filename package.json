@@ -52,7 +52,7 @@
     "vinyl-named": "1.x.x",
     "vue": "1.0.28-csp",
     "vueify-insert-css": "^1.0.0",
-    "webpack": "1.x.x",
+    "webpack": "^2.2.1",
     "webpack-stream": "3.x.x",
     "yargs": "5.x.x"
   }

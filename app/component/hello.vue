@@ -14,7 +14,7 @@ export default {
 
 <style lang="css">
   .vue{
-    color: #fff;
+    color: #000;
     display: block;
     text-align: center;
   }

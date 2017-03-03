@@ -1,14 +1,10 @@
-var Vue = require('vue');
-var hello= require('../component/hello.js');
+import Vue from 'vue';
+import App from '../component/app.vue';
 
 var app=new Vue({
   el:'#app',
   data:{
     name:'vue-chrome-extension'
   },
-  components:{
-    hello:hello
-  }
+  render: h =>h(App)
 })
-
-console.log(Vue.version);
